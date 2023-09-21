@@ -1,7 +1,18 @@
+import java.util.Scanner;
 public class Lesson39{
    public static void main(String[] args){
+   
 
-    int[6] arr={12,86,43,57,34,67};
+   Scanner input = new Scanner(System.in);
+
+
+    int[6] arr=new int[6];
+    for(int i=0; i<arr.length;i++){
+    int x = input.nextInt();
+      arr[i] = x;
+}
+
+
 
        selectionSort(arr);
 
@@ -10,7 +21,7 @@ public class Lesson39{
 
 public static void selectionSort(int[] arr){
 
-    for(int i=0; i<arr.length,i++){
+    for(int i=0; i<arr.length;i++){
       
       int currMin= list[i];
       int currMinIndex= i;

@@ -14,8 +14,10 @@ public class Lesson56{
 
 
 
-    }
 
+
+    }
+}
 
 
     class SimpleGeometicObject{
@@ -55,4 +57,79 @@ public class Lesson56{
             return "Created on " + dateCreated+"\n color: " + this.colour;+" and filled: " + this.filled;
         }
     }
-}
+
+
+    Class Circle extends SimpleGeometicObject{
+      private double radius;
+
+     public  Circle(double radius){
+        this.radius = radius;
+      }
+     
+    public Circle(){
+        System.out.println("New Circle created");
+     }
+    
+    public void setRadius(double radius){
+        this.radius = radius;
+    }
+
+    public double getRadius(){
+        return this.radius;
+    }
+
+    public double getArea(){
+        return Math.PI*radius*radius;
+    }
+    
+
+    } 
+
+
+
+    Class Rectangle extends SimpleGeometryObject{
+      private double length;
+      private double breadth;
+
+      public Rectangle(){
+        System.out.println("New Rectangle created");
+      }
+
+      public Rectangle(double l, double  b){
+        this.length = l;
+        this.breadth = ;b
+      }
+
+      public void setDimension(double l, double  b){
+        this.length = l;
+        this.breadth = ;b
+      }
+
+      public void viewDimension(){
+        System.out.println("Length: " + length);
+        System.out.println("Breadth: " + breadth);
+      }
+
+      public double getArea(){
+        return length*breadth;
+      }
+
+      public double getPerimeter(){
+        return 2*(length+breadth);
+      }
+
+    //   public void ShowColour(){
+    //     System.out.println("The colour is: " + this.colour);
+    //   }
+
+
+    //   public void setColour(String colour){
+    //     this.colour = colour;
+    //   }
+
+      }
+
+
+
+
+    

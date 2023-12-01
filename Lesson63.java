@@ -3,6 +3,9 @@ import java.util.ArrayList;
 public class Lesson63{
     public static void main(String[] args){
 
+   MyStack mystack= new MyStack();
+   
+
 
        
 

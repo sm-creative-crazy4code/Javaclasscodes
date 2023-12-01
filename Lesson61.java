@@ -19,4 +19,42 @@ public class Lesson61{
   
 }
 
+class SimpleCircle {
+    int radius;
+    
+   public SimpleCircle(){
+      radius=1;
+    }
+   public SimpleCircle(int a){
+        radius= a;
+    }
+
+    
+
+
+   public double getArea() { 
+       return Math.PI*radius*radius;
+
+    }
+
+     public double getPerimeter() {
+        return Math.PI*radius*2;
+    }
+
+public int getRadius() {
+  return radius;
+}
+
+public void setRadius(int r) {
+    radius=r;
+}
+
+
+public boolean equals (SimpleCircle obj) { 
+  if(this.radius==obj.radius) return true;
+  else return false;
+
+}
+
+}
 
